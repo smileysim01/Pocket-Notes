@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/Basic-Note-Taking-React-App/' element={<MainPage />} />
+        <Route path='/Pocket-Notes/' element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   )
