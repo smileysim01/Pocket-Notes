@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/Basic-Note-Taking-React-App/static/css/main.f855e6bc.css",
-    "main.js": "/Basic-Note-Taking-React-App/static/js/main.3a0d8b6c.js",
-    "static/js/453.cf291aa0.chunk.js": "/Basic-Note-Taking-React-App/static/js/453.cf291aa0.chunk.js",
-    "static/media/logo.svg": "/Basic-Note-Taking-React-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/Basic-Note-Taking-React-App/static/css/main.85b8e5a2.css",
+    "main.js": "/Basic-Note-Taking-React-App/static/js/main.58e34d44.js",
+    "static/media/mainPagebg.png": "/Basic-Note-Taking-React-App/static/media/mainPagebg.5e03ac962edc48052378.png",
     "index.html": "/Basic-Note-Taking-React-App/index.html",
-    "main.f855e6bc.css.map": "/Basic-Note-Taking-React-App/static/css/main.f855e6bc.css.map",
-    "main.3a0d8b6c.js.map": "/Basic-Note-Taking-React-App/static/js/main.3a0d8b6c.js.map",
-    "453.cf291aa0.chunk.js.map": "/Basic-Note-Taking-React-App/static/js/453.cf291aa0.chunk.js.map"
+    "main.85b8e5a2.css.map": "/Basic-Note-Taking-React-App/static/css/main.85b8e5a2.css.map",
+    "main.58e34d44.js.map": "/Basic-Note-Taking-React-App/static/js/main.58e34d44.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.3a0d8b6c.js"
+    "static/css/main.85b8e5a2.css",
+    "static/js/main.58e34d44.js"
   ]
 }
