@@ -1,22 +1,32 @@
 .container {
     display: flex;
+    flex-flow: column wrap;
     background-color: white;
     color: black;
-    flex-flow: column wrap;
-    padding: 2rem;
-    margin: 2rem;
-    justify-content: space-around;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: justify;
     position: -webkit-sticky;
-    /* backdrop-filter: blur(5px);
-    z-index: 1000; */
+    width: 90%;
+    height: 30%;
+    margin: 2rem;
+    border-radius: 8px;
 }
 .container #heading {
     font-weight: 500;
     font-size: 1.2rem;
 }
+
 label {
     font-weight: 500;
     font-size: 1.1rem;
+    margin: 1.5rem 0.5rem 1.5rem 0;
+}
+input {
+    margin: 1.5rem 0;
+    border: 0.88px solid rgba(204, 204, 204, 1);
+    border-radius: 9.2px;
+    padding: 0.5rem;
 }
 .container #createBtn {
     background-color: var(--theme-color);
@@ -25,15 +35,32 @@ label {
     padding: 0.5rem 1.6rem;
     font-size: 0.8rem;
     cursor: pointer;
+    margin: 2rem 2rem 0 2rem;
+    align-self: flex-end;
+}
+.container #createBtnM {
+    background-color: var(--theme-color);
+    color: white;
+    border-radius: 11px;
+    padding: 0.5rem 1.6rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 2rem 2rem 0 2rem;
+    align-self: center;
+    width: 80%;
 }
 #colorBtn{
     cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    border: none;
+    margin-right: 0.51rem;
 }
 #colorBtn:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     transform: translate3d(0px,1px,0px);
 }
-
 #createBtn:hover {
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2)
 }

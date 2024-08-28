@@ -14,7 +14,6 @@ function MainPage() {
     const [notesGroups,setNotesGroups] = useState([]);
     const [selectedGroup, setSelectedGroup] = useState(null);
     const [width, setWidth] = useState(window.innerWidth);
-    
     // checking device size to make it responsive
     useEffect(() => {
       const handleResize = () => setWidth(window.innerWidth);
@@ -22,13 +21,14 @@ function MainPage() {
       return () => window.removeEventListener("resize", handleResize);
     }, []);
   
-    // local storage for notesGroups
+    //local storage for notesGroups
     useEffect(() => {
         let storedGroups = localStorage.getItem('notesGroups');
         if(storedGroups) {
             setNotesGroups(JSON.parse(storedGroups));
         }
     }, []);
+    
     
   return (
     <div className={styles.container}>
@@ -37,16 +37,16 @@ function MainPage() {
         (width < '720') ? (
           //Mobile Left(only) container
             (selectedGroup ? 
-              (<Notes selectedGroup={selectedGroup} notesGroups={notesGroups} setNotesGroups={setNotesGroups} />) : 
+              (<Notes selectedGroup={selectedGroup} notesGroups={notesGroups} setNotesGroups={setNotesGroups} width={width}/>) : 
               (
-                <div className={styles.left}>
+                <div className={styles.left} id={styles.mobileContainer}>
                   <div id={styles.header}>Pocket Notes</div>
                   <button id={styles.addBtn} onClick={() => setIsPopupOpen(true)}>+</button>
                   <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
-                      <NewGroup setIsPopupOpen={setIsPopupOpen} notesGroups={notesGroups} setNotesGroups={setNotesGroups} />
+                      <NewGroup setIsPopupOpen={setIsPopupOpen} notesGroups={notesGroups} setNotesGroups={setNotesGroups} width={width}/>
                   </Popup>
                   {isPopupOpen && <div id={styles.onPopup}></div>}
-                  <NotesGroup notesGroups={notesGroups} setSelectedGroup={setSelectedGroup} />
+                  <NotesGroup notesGroups={notesGroups} setSelectedGroup={setSelectedGroup}/>
                 </div>
               )
             )
@@ -59,14 +59,14 @@ function MainPage() {
               <div id={styles.header}>Pocket Notes</div>
               <button id={styles.addBtn} onClick={() => setIsPopupOpen(true)}>+</button>
               <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
-                  <NewGroup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} onClose={() => setIsPopupOpen(false)} notesGroups={notesGroups} setNotesGroups={setNotesGroups}/>
+                  <NewGroup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} onClose={() => setIsPopupOpen(false)} notesGroups={notesGroups} setNotesGroups={setNotesGroups} width={width}/>
               </Popup>
               {isPopupOpen && <div id={styles.onPopup}></div>}
               <NotesGroup notesGroups={notesGroups} setSelectedGroup={setSelectedGroup} />
             </div>
           {//Right Desktop Container
             (selectedGroup) ? 
-            (<Notes selectedGroup={selectedGroup} notesGroups={notesGroups} setNotesGroups={setNotesGroups} />) : 
+            (<Notes selectedGroup={selectedGroup} notesGroups={notesGroups} setNotesGroups={setNotesGroups} width={width}/>) : 
             (<div className={styles.right}>
               <div className={styles.contentBox}>
                 <img src={bg} alt="Background" />

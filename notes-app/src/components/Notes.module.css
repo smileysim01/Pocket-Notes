@@ -50,7 +50,7 @@
 #textArea::placeholder {
     color: rgba(154, 154, 154, 1);
 }
-#sendImg {
+#sendBtn {
     z-index: 2;
     width: 1rem;
     height: 1rem;
@@ -58,8 +58,48 @@
     position: fixed;
     bottom: 2rem;
     right: 0.5rem;
+    cursor: pointer;
 }
 #backImg {
     width: 1.5rem;
     height: 1.5rem;
+}
+.oldNotes {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 1);
+}
+#notes {
+    display: flex;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    margin: 1rem 0.5rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#dateTime{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-self: flex-end;
+}
+#dateTime span{
+    background-color: rgba(53, 53, 53, 1);
+    border-radius: 50%;
+    height: 0.4rem;
+    width: 0.4rem;
+    margin: 0 0.5rem;
+    align-self: center;
+}
+::-webkit-scrollbar {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5.5px;
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 4.5px;
 }
