@@ -1,13 +1,12 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import MainPage from './components/routes/MainPage'
-import NewGroup from './components/NewGroup'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<MainPage />} />
+        <Route path='/Basic-Note-Taking-React-App/' element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   )
