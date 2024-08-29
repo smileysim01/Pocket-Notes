@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5rem;
+    background-color: var(--theme-bgColor);
+}
+#header{
+    color:var(--theme-color) ;
+    font-size: 6rem;
+    font-weight: 500;
+}
+#header2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.subText{
+    font-size: 1rem;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #565353;
+}
+.homebutton{
+    background-color: var(--theme-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.homebutton:hover{
+    background-color: #456bad;
+    color: black;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}

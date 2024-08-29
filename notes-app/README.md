@@ -14,4 +14,4 @@ To create a minimal note taking web application using React.
 * You also need to save meta data like date and time when the notes was saved and last updated.
 
 ### Deployment:
-The project is currently deployed on Github Pages at [https://smileysim01.github.io/Basic-Note-Taking-React-App]
+The project is currently deployed on Github Pages at [https://smileysim01.github.io/Pocket-Notes]
