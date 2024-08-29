@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/Pocket-Notes' element={<MainPage />} sensitive={false}/>
-        <Route path='*' element={<NotFoundPage />} />
+        <Route path='/Pocket-Notes/*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
